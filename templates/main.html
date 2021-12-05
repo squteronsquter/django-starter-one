@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.J. Motyl | Website</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 67.5%;
+            background-color: black;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: aliceblue;
+            font-size: 4rem ;
+        }
+        p {
+            line-height: 1.5;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    {% block content %}
+
+    
+    {% endblock content %}
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
